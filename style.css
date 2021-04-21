@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+#header {
+  width: 100%;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0px;
+  z-index: 99;
+}
+
+nav {
+  min-height: 5vh;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  width: 50%;
+}
+
+nav a {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bubble {
+  position: absolute;
+  z-index: -2;
+  background: linear-gradient(to right, #8a8a8a, #383838, #ccedf0);
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+
+/* BASIC */
+
+/* HOME */
+
+.home {
+  background: url(./img/spuldze.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section h1 {
+  font-size: 64px;
+  position: absolute;
+  top: 15%;
+  /*text starts in center of page*/
+  left: 50%;
+  /*move text center to the center of page*/
+  transform: translate(-50%, -15%);
+  /*text background color*/
+  background: linear-gradient(to left, #c2591c, #c28554, #ccedf0);
+  /*text is clipped to the background*/
+  -webkit-background-clip: text;
+  /*text color is transparent so that the text background color remains and is displayed as text color*/
+  -webkit-text-fill-color: transparent;
+}
+#ddaa81 .title {
+  width: 500px;
+}
+
+.logo {
+  padding-bottom: -1rem;
+  /* position: fixed; */
+  /* top: 5%; */
+  /*text starts in center of page*/
+  /* left: 5%; */
+  /*move text center to the center of page*/
+  /* transform: translate(-20%, -20%); */
+}
+
+/* HOME  */
+
+.about {
+  background: url(./img/vēja_turbīnas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.services {
+  background: url(./img/pārvadu_līniju_apakst.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.projects {
+  background: url(./img/pārvadu_līnija.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact {
+  background: url(./img/saules_paneli_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

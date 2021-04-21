@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fullpage.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>ME RPOJEKTS</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <!-- <div class="logo"> -->
+        <img class="logo" src="./img/logo_2.png" alt="logo" />
+        <!-- </div> -->
+
+        <ul>
+          <li><a data-page="home" href="#">Sākums</a></li>
+          <li><a data-page="about" href="#">Par mums</a></li>
+          <li><a data-page="services" href="#">Pakalpojumi</a></li>
+          <li><a data-page="projects" href="#">Projekti</a></li>
+          <li><a data-page="contact" href="#">Kontakti</a></li>
+          <div class="bubble"></div>
+        </ul>
+      </nav>
+    </header>
+    <div id="fullpage">
+      <main>
+        <section data-index="0" class="section s1 home" id="home">
+          <div class="container home__container">
+            <div class="title"><h1>ME PROJEKTS</h1></div>
+          </div>
+        </section>
+        <section data-index="1" class="section s2 about" id="about">
+          <div class="container about__container"></div>
+        </section>
+        <section data-index="2" class="section s3 services" id="services">
+          <div class="container services__container"></div>
+        </section>
+        <section data-index="3" class="section s4 projects" id="projects">
+          <div class="container services__container"></div>
+        </section>
+        <section data-index="4" class="section s5 contact" id="contact">
+          <div class="container contact__container"></div>
+        </section>
+      </main>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+      integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./fullpage.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
