@@ -62,7 +62,7 @@ section {
 /* HOME */
 
 .home {
-  background: url(./img/spuldze.jpg);
+  background: url(./img/spuldze.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -99,22 +99,22 @@ section {
 /* HOME  */
 
 .about {
-  background: url(./img/vēja_turbīnas.jpg);
+  background: url(./img/veja_turbinas.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .services {
-  background: url(./img/pārvadu_līniju_apakst.jpg);
+  background: url(./img/parvada_linjas_apakst.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .projects {
-  background: url(./img/pārvadu_līnija.jpg);
+  background: url(./img/parvada_linija.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 .contact {
-  background: url(./img/saules_paneli_1.jpg);
+  background: url(./img/saules_paneli.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
