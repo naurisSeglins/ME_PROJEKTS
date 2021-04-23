@@ -1,7 +1,7 @@
 //scrolls
 new fullpage("#fullpage", {
   autoScrolling: true,
-  // navigation: true,
+  continuousVertical: true,
 });
 
 //NAVBAR PĀRLEKŠANA
@@ -43,4 +43,28 @@ function navCheck(entries) {
 
 sections.forEach((section) => {
   observer.observe(section);
+});
+
+//PAKALPOJUMU TABS
+let btns = document.querySelectorAll(".tab-btn");
+let services = document.querySelector(".services");
+let articles = document.querySelectorAll(".content");
+
+services.addEventListener("click", function (e) {
+  console.log(e.target.dataset.id);
+  let id = e.target.dataset.id;
+  if (id) {
+    //remove active from other buttons
+    btns.forEach(function (btn) {
+      btn.classList.remove("active");
+      //add active to clicked button
+      e.target.classList.add("active");
+    });
+    //hide other articles
+    articles.forEach(function (article) {
+      article.classList.remove("active");
+    });
+    let element = document.getElementById(id);
+    element.classList.add("active");
+  }
 });

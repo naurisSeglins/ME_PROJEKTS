@@ -21,32 +21,141 @@
         <!-- </div> -->
 
         <ul>
-          <li><a data-page="home" href="#">Sākums</a></li>
-          <li><a data-page="about" href="#">Par mums</a></li>
-          <li><a data-page="services" href="#">Pakalpojumi</a></li>
-          <li><a data-page="projects" href="#">Projekti</a></li>
-          <li><a data-page="contact" href="#">Kontakti</a></li>
+          <li data-menuanchor="home">
+            <a data-page="home__bubble" href="#home">Sākums</a>
+          </li>
+          <li data-menuanchor="about">
+            <a data-page="about__bubble" href="#about">Par mums</a>
+          </li>
+          <li data-menuanchor="services">
+            <a data-page="services__bubble" href="#services">Pakalpojumi</a>
+          </li>
+          <li data-menuanchor="projects">
+            <a data-page="projects__bubble" href="#projects">Projekti</a>
+          </li>
+          <li data-menuanchor="contact">
+            <a data-page="contact__bubble" href="#contact">Kontakti</a>
+          </li>
           <div class="bubble"></div>
+          <a href=""></a>
         </ul>
       </nav>
     </header>
     <div id="fullpage">
       <main>
-        <section data-index="0" class="section s1 home" id="home">
+        <section
+          data-index="0"
+          class="section s1 home"
+          data-anchor="home"
+          id="home__bubble"
+        >
           <div class="container home__container">
             <div class="title"><h1>ME PROJEKTS</h1></div>
           </div>
         </section>
-        <section data-index="1" class="section s2 about" id="about">
-          <div class="container about__container"></div>
+        <section
+          data-index="1"
+          class="section s2 about"
+          data-anchor="about"
+          id="about__bubble"
+        >
+          <div class="container about__container">
+            <div class="about__data">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Obcaecati, reiciendis alias saepe, illum veritatis sunt veniam
+                odit impedit adipisci asperiores non, atque sit reprehenderit.
+                Eius earum excepturi facilis, suscipit quis dolore totam aliquid
+                ullam atque quod porro unde sunt esse doloribus provident dicta?
+                Voluptate quis doloremque sunt temporibus facilis cumque optio
+                quidem quod cum aperiam assumenda voluptatem necessitatibus
+                fugiat labore inventore quas molestias mollitia dignissimos.
+              </p>
+            </div>
+          </div>
         </section>
-        <section data-index="2" class="section s3 services" id="services">
-          <div class="container services__container"></div>
+        <section
+          data-index="2"
+          class="section s3 services__section"
+          data-anchor="services"
+          id="services__bubble"
+        >
+          <div class="container services__container">
+            <!-- tabs -->
+                <div class="services-center section-center">
+                  <article class="services">
+                    <!-- button container -->
+                    <div class="btn-container">
+                      <button class="tab-btn active" data-id="Nr.1">Pakalpojums Nr.1</button>
+                      <button class="tab-btn" data-id="Nr.2">Pakalpojums Nr.2</button>
+                      <button class="tab-btn" data-id="Nr.3">Pakalpojums Nr.3</button>
+                      <button class="tab-btn" data-id="Nr.4">Pakalpojums Nr.4</button>
+                      <button class="tab-btn" data-id="Nr.5">Pakalpojums Nr.5</button>
+                    </div>
+
+                    <article class="services-content">
+                      <!-- single item -->
+                      <div class="content active" id="Nr.1">
+                        <h4>Pakalpojums Nr.1</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus fugiat perferendis minima dolore deleniti, assumenda doloribus cum tempora sit ea! Explicabo quidem, repellendus corrupti alias voluptate maxime veniam est delectus?
+                        </p>
+                      </div>
+                      <!-- end of single item -->
+
+                      <!-- single item -->
+                      <div class="content" id="Nr.2">
+                        <h4>Pakalpojums Nr.2</h4>
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam labore assumenda ex maiores consequatur beatae nam, hic animi, dolorum minima perspiciatis. Nostrum porro quo perferendis!
+                        </p>
+                      </div>
+                      <!-- end of single item -->
+
+                      <!-- single item -->
+                      <div class="content" id="Nr.3">
+                        <h4>Pakalpojums Nr.3</h4>
+                        <p>
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, officiis sequi. Culpa, nesciunt eos. Eius rerum et, iusto quod optio nostrum facere hic nesciunt. Illum nulla adipisci itaque recusandae animi tempora tempore velit consequatur alias.
+                        </p>
+                      </div>
+                      <!-- end of single item -->
+
+                      <!-- single item -->
+                      <div class="content" id="Nr.4">
+                        <h4>Pakalpojums Nr.4</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint possimus alias, consequatur odio error temporibus ea porro omnis officia!
+                        </p>
+                      </div>
+                      <!-- end of single item -->
+
+                      <!-- single item -->
+                      <div class="content" id="Nr.5">
+                        <h4>Pakalpojums Nr.5</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minima rerum possimus labore fugiat, vero nam ullam quas vel magnam! Voluptatum rerum doloribus quibusdam repellendus quia dolore dolor ex odit molestiae, quas asperiores saepe facilis alias similique est minus delectus.
+                        </p>
+                      </div>
+                      <!-- end of single item -->
+                    </article>
+                  </article>
+                </div>
+              </section>
+        <section
+          data-index="3"
+          class="section s4 projects"
+          data-anchor="projects"
+          id="projects__bubble"
+        >
+          <div class="container projects__container"></div>
         </section>
-        <section data-index="3" class="section s4 projects" id="projects">
-          <div class="container services__container"></div>
-        </section>
-        <section data-index="4" class="section s5 contact" id="contact">
+        <section
+          data-index="4"
+          class="section s5 contact"
+          data-anchor="contact"
+          id="contact__bubble"
+        >
           <div class="container contact__container"></div>
         </section>
       </main>

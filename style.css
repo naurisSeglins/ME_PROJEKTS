@@ -57,6 +57,16 @@ section {
   transition: all 0.5s ease;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
 /* BASIC */
 
 /* HOME */
@@ -82,39 +92,116 @@ section {
   /*text color is transparent so that the text background color remains and is displayed as text color*/
   -webkit-text-fill-color: transparent;
 }
-#ddaa81 .title {
+.title {
   width: 500px;
 }
 
 .logo {
   padding-bottom: -1rem;
-  /* position: fixed; */
-  /* top: 5%; */
-  /*text starts in center of page*/
-  /* left: 5%; */
-  /*move text center to the center of page*/
-  /* transform: translate(-20%, -20%); */
 }
 
 /* HOME  */
 
+/* ABOUT */
 .about {
   background: url(./img/veja_turbinas.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.services {
+
+.about__data {
+  width: 670px;
+  text-align: center;
+  transform: translate(55%, 0%);
+  font-size: 2rem;
+  color: #2c5169d2;
+}
+/* ABOUT */
+
+/* SERVICES */
+.services__section {
   background: url(./img/parvada_linjas_apakst.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.services {
+  background: rgba(200, 204, 250, 0.4);
+  border-radius: 1rem;
+  /* display: grid; */
+  /* grid-template-rows: auto 1fr; */
+}
+
+.btn-container {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  display: grid;
+  /* here can set how manyt columns there will be  */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.tab-btn:nth-child(1) {
+  border-top-left-radius: 1rem;
+}
+.tab-btn:nth-child(5) {
+  border-top-right-radius: 1rem;
+}
+.tab-btn {
+  padding: 1rem 0;
+  border: none;
+  text-transform: capitalize;
+  font-size: 1rem;
+  display: block;
+  color: rgb(31, 28, 28);
+  background: rgba(100, 105, 128, 0.3);
+  cursor: pointer;
+  transition: 0.7s;
+  letter-spacing: 0.2rem;
+}
+
+.tab-btn:hover:not(.active) {
+  background: rgba(68, 131, 73, 0.4);
+  color: rgb(250, 250, 250);
+}
+.services-content {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 2rem 1.5rem;
+}
+/* hide content */
+.content {
+  display: none;
+}
+.tab-btn.active {
+  background: rgba(178, 202, 248, 0.6);
+  color: rgb(250, 250, 250);
+  border: none;
+}
+
+.content.active {
+  display: block;
+}
+
+/* SERVICES */
+
+/* PROJECTS */
 .projects {
   background: url(./img/parvada_linija.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+/* PROJECTS */
+
+/* CONTACTS */
 .contact {
   background: url(./img/saules_paneli.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
+/* CONTACTS */
