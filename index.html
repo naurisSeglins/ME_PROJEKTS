@@ -36,6 +36,12 @@
           <li data-menuanchor="contact">
             <a data-page="contact__bubble" href="#contact">Kontakti</a>
           </li>
+          <li >
+            <a  href="#"><img class="flag__img" id="uk_flag" src="./img/uk_flag.svg" alt="UK flag"> </a>
+          </li>
+          <li>
+            <a href="#"> <img class="flag__img" id="rus_flag" src="./img/rus_flag.svg" alt="RUS flag"></a>
+          </li>
           <div class="bubble"></div>
           <a href=""></a>
         </ul>
@@ -142,6 +148,8 @@
                   </article>
                 </div>
               </section>
+
+              <!--  -->
         <section
           data-index="3"
           class="section s4 projects"
@@ -150,22 +158,51 @@
         >
           <div class="container projects__container"></div>
         </section>
+        <!--  -->
+
+        <!-- contact -->
         <section
           data-index="4"
           class="section s5 contact"
           data-anchor="contact"
           id="contact__bubble"
         >
-          <div class="container contact__container"></div>
+          <div class="container contact__container">
+            <!-- contact -->
+          <div class="contact__content">
+            <p class="contact__descriptino">
+              <h3>SIA "ME PROJEKTS"</h3>
+              
+              <br>
+              <h3>Adrese:</h3>
+              <h4>...............</h4>
+              <br>
+              <h3>epasts:</h3>
+              <h4>info@meprojekts.lv</h4>
+              
+              <br>
+              <h3>telefons:</h3>
+              <h4>+371 .......</h4>
+              
+              <br>
+          </div>
+          
+          <div class="contact__img">
+            <h3>Google Maps</h3>
+          <!--The div element for the map -->
+          <div id="map"></div>
+          
+        </div>
+      </section>
+          </div>
         </section>
       </main>
     </div>
 
-    <!-- <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-      integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
-      crossorigin="anonymous"
-    ></script> -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVR0B3ljhp5vbtEbvHkIRcyWrHmlLNJls&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
       integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
