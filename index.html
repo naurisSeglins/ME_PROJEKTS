@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="fullpage.min.css" />
     <link rel="stylesheet" href="./style.css" />
+        <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>ME PROJEKTS</title>
   </head>
   <body>
@@ -30,23 +34,35 @@
           <li data-menuanchor="services">
             <a data-page="services__bubble" href="#services">Pakalpojumi</a>
           </li>
-          <li data-menuanchor="projects">
+          <!-- <li data-menuanchor="projects">
             <a data-page="projects__bubble" href="#projects">Projekti</a>
-          </li>
+          </li> -->
           <li data-menuanchor="contact">
             <a data-page="contact__bubble" href="#contact">Kontakti</a>
           </li>
-          <li >
+          <!-- <li >
             <a  href="#"><img class="flag__img" id="uk_flag" src="./img/uk_flag.svg" alt="UK flag"> </a>
           </li>
           <li>
             <a href="#"> <img class="flag__img" id="rus_flag" src="./img/rus_flag.svg" alt="RUS flag"></a>
-          </li>
+          </li> -->
           <div class="bubble"></div>
           <a href=""></a>
         </ul>
       </nav>
     </header>
+    <footer class="footer" >
+                <div class="footer__content">
+                <h3 class="footer__title">Sociālie tīkli</h3>
+                <a href="https://www.facebook.com/Me-Projekts-109339227958567/" class="footer__social" target="_blank"
+                  ><i class="bx bxl-facebook-circle"></i
+                ></a>
+                <a href="https://www.instagram.com/meprojekts/" class="footer__social" target="_blank"
+                  ><i class="bx bxl-instagram-alt"></i
+              ></a>
+            </div>
+      <p class="footer__copy">&#169; ME PROJEKTS<br>Izstrādāja ACORN WEB Development </p>
+    </footer>
     <div id="fullpage">
       <main>
         <section
@@ -68,14 +84,46 @@
           <div class="container about__container">
             <div class="about__data">
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Obcaecati, reiciendis alias saepe, illum veritatis sunt veniam
-                odit impedit adipisci asperiores non, atque sit reprehenderit.
-                Eius earum excepturi facilis, suscipit quis dolore totam aliquid
-                ullam atque quod porro unde sunt esse doloribus provident dicta?
-                Voluptate quis doloremque sunt temporibus facilis cumque optio
-                quidem quod cum aperiam assumenda voluptatem necessitatibus
-                fugiat labore inventore quas molestias mollitia dignissimos.
+                    SIA “ME PROJEKTS” ir pilna servisa inženiertehniskā kompānija, kas piedāvā saviem klientiem plaša klāsta pakalpojumus elektroapgādes jomā.
+                    Mūsu sertificētais personāls nodrošina elektroapgādes projektu sekmīgu realizāciju un piedāvā elektroapgādes, elektroinstalācijas un automatizācijas.
+                    <br>
+                    <br>
+                    Mūsu sertificēti specialisti realizēja vairākus elektroapgādes un automatizācijas projektus visdažādākajās nozares un ekonomikas sektoros, piemēram:
+                    <ul>
+                      <li>
+                        Lielveikalu tīkli;
+                      </li>
+                      <li>
+                        Tirdzniecības centri;
+                      </li>
+                      <li>
+                        Elektromobiļu uzlādes stacijas;
+                      </li>
+                      <li>
+                        Noliktavas;
+                      </li>
+                      <li>
+                        Energoapgādes objekti;
+                      </li>
+                      <li>
+                        Datu centri;
+                      </li>
+                      <li>
+                        Degvielas uzpildes stacijas;
+                      </li>
+                      <li>
+                        Administratīvās ēkas;
+                      </li>
+                      <li>
+                        Izglītības iestādes;
+                      </li>
+                      <li>
+                        Kultūras pieminekļi un valsts nozīmīgie objekti;
+                      </li>
+                      <li>
+                        Militārie objekti un lidostas.
+                      </li>
+                    </ul>
               </p>
             </div>
           </div>
@@ -92,56 +140,218 @@
                   <article class="services">
                     <!-- button container -->
                     <div class="btn-container">
-                      <button class="tab-btn active" data-id="Nr.1">Pakalpojums Nr.1</button>
-                      <button class="tab-btn" data-id="Nr.2">Pakalpojums Nr.2</button>
-                      <button class="tab-btn" data-id="Nr.3">Pakalpojums Nr.3</button>
-                      <button class="tab-btn" data-id="Nr.4">Pakalpojums Nr.4</button>
-                      <button class="tab-btn" data-id="Nr.5">Pakalpojums Nr.5</button>
+                      <button class="tab-btn active" data-id="Nr.1">Elektriskie mērījumi</button>
+                      <button class="tab-btn" data-id="Nr.2">Elektroinstalācijas apsaimniekošana</button>
+                      <button class="tab-btn" data-id="Nr.3">Elektroaudits</button>
+                      <button class="tab-btn" data-id="Nr.4">Elektroenerģijas kvalitātes parametru mērīšana</button>
+                      <button class="tab-btn" data-id="Nr.5">Strāvas noplūdes aizsardzības pārbaude</button>
+                      <button class="tab-btn" data-id="Nr.6">Zibensaizsardzība</button>
                     </div>
 
                     <article class="services-content">
                       <!-- single item -->
                       <div class="content active" id="Nr.1">
-                        <h4>Pakalpojums Nr.1</h4>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus fugiat perferendis minima dolore deleniti, assumenda doloribus cum tempora sit ea! Explicabo quidem, repellendus corrupti alias voluptate maxime veniam est delectus?
-                        </p>
+                        <h3>Elektriskie mērījumi</h3>
+                          <p class="services__data">
+                            SIA “ME PROJEKTS” piedāvā pilno pakalpojumu spektru, kur iekļauti <b>elektriskie mērījumi</b> , tostarp elektroietaišu tehnisko parametru mērīšana un pārbaude.
+                            <br>
+                            Mūsu piedāvātie pakalpojumi:
+                          </p>
+                          <ul class="services__data">
+                            <li>
+                              Termogrāfija (saskaņā ar MK noteikumi Nr. 238 – Ugunsdrošības noteikumi.) Tiek izrakstīts elektroinstalācijas kontaktsavienojumu pārbaudes akts;
+                            </li>
+                            <li>
+                              Kabeļu izolācijas pretestības pārbaude;
+                            </li>
+                            <li>Zemējuma un zibensaizsardzības pārbaude;</li>
+                            <li>
+                              Zemējuma nepārtrauktības pārbaude;
+                            </li>
+                            <li>
+                              Cilpas faze-0 pārbaude;
+                            </li>
+                            <li>
+                              Īsslēguma strāvas mērījumi;
+                            </li>
+                            <li>
+                              Apgaismojuma līmeņa mērījumi;
+                            </li>
+                            <li>
+                              Elektrisko automobiļu uzlādes stacijas pārbaude;
+                            </li>
+                            <li>
+                              Zemējuma īpatnējas pretestības mērījumi (priekš apakšstacijām);
+                            </li>
+                            <li>
+                              Sastādām aktu saskaņā ar Nr. 238 6. Pielikums –“ Elektroinstalācijas izolācijas pretestības mērījumu, elektroiekārtu, zemējuma ierīces un zemējumvada nepārtrauktības pretestības un zibensaizsardzības sistēmas pārbaudes akts.”;
+                            </li>
+                            <li>
+                              Izrakstam sertificēta elektriķa atzinumu.
+                            </li>
+                          </ul>
+                          <p class="services__data">Mēs piedāvājam pieņemt ekspluatācijā Jūsu elektroapgādes objektus, izrakstot sertificēta elektriķa atzinumu.
+                          <br>
+                          Piedāvātie pakalpojumi:</p>
+
+                          <ul class="services__data">
+                            <li>
+                              Rūpniecisko objektu elektroinstalācijas pieņemšana ekspluatācijā;
+                            </li>
+                            <li>
+                              Sabiedrisko objektu elektroinstalācijas pieņemšana ekspluatācijā;
+                            </li>
+                            <li>
+                              Daudzīvokļu mājās elektroinstalācijas pieņemšana ekspluatācijā;</li>
+                            <li>
+                              Privātmājas elektroinstalācijas pieņemšana ekspluatācijā;
+                            </li>
+                            <li>
+                              Dzīvokļu elektroinstalācijas pieņemšana ekspluatācijā;
+                            </li>
+                          </ul>
+                        
                       </div>
                       <!-- end of single item -->
 
                       <!-- single item -->
                       <div class="content" id="Nr.2">
-                        <h4>Pakalpojums Nr.2</h4>
-                        <p>
-                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam labore assumenda ex maiores consequatur beatae nam, hic animi, dolorum minima perspiciatis. Nostrum porro quo perferendis!
-                        </p>
+                        <h3>Elektroinstalācijas apsaimniekošana</h3>
+                          <p class="services__data">
+                            SIA “ME PROJEKTS” piedāvā ēku elektroinstalācijas apsaimniekošanu un 24/7 izbraukuma servisu avārijas gadījumos ar momentālu reakcijas laiku.
+                            <br>
+                            Avārijas gadījumā, Mūsu elektriķi nekavējoties izbrauc uz objektu, lai novērstu avāriju un atjaunotu objekta ierasto darba režīmu.
+                            <br>
+                            Noslēdzot elektroinstalācijas apsaimniekošanas līgumu, Mūsu speciālisti veic objekta regulāro apsekošanu, lai noteiktu:
+                          </p>
+                          <ul class="services__data">
+                            <li>
+                              vietas, kur potenciāli var rasties elektroinstalācijas bojājumi (avārija);
+                            </li>
+                            <li>
+                              vietas ar nelikumīgo pieslēgumu pie elektrotīkla un kā rezultāts – elektroenerģijas zādzības.
+                            </li>
+                          </ul>
+                          <p class="services__data">
+                            Katram objektam tiek sastādīts individuālais apkopes plāns, kas iekļauj:
+                          </p>
+                          <ul class="services__data">
+                            <li>
+                              Elektroiekārtu un elektroinstalācijas periodiskas pārbaudes;
+                            </li>
+                            <li>
+                              Plānotie remontdarbi;
+                            </li>
+                            <li>
+                              Periodiskas komponenšu nomaiņas plāns –komponentiem, kas tiek pakļauti nolietojumam elektroinstalācijas ekspluatācijas laikā;
+                            </li>
+                            <li>
+                              Sadaļņu un marķējumu atjaunošana – pēc nepieciešamības;
+                            </li>
+                            <li>
+                              Elektrisko mērījumu dokumentācija – Pēc nepieciešamības: 
+                            </li>
+                            <li>
+                              Elektroapgādes (elektroinstalācijas) dokumentācijas sakārtošana – pēc nepieciešamības;
+                            </li>
+                          </ul>
+                        
                       </div>
                       <!-- end of single item -->
 
                       <!-- single item -->
                       <div class="content" id="Nr.3">
-                        <h4>Pakalpojums Nr.3</h4>
-                        <p>
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, officiis sequi. Culpa, nesciunt eos. Eius rerum et, iusto quod optio nostrum facere hic nesciunt. Illum nulla adipisci itaque recusandae animi tempora tempore velit consequatur alias.
-                        </p>
+                        <h3>Elektroaudits</h3>
+                          <p class="services__data">
+                            Izvērtējot elektrotīklu bojājumu un ugunsgrēku statistiku, SIA “ME PROJEKTS” eksperti izstrādāja speciālo pakalpojumu – Elektroaudits . Elektroaudits – tas ir tehnisko pakalpojumu kopums, kas iekļauj objekta apsekošanu, esošās tehniskās dokumentācijas analīzi un elektrisko mērījumu veikšanu. 
+                            <br>
+                            Elektroaudita rezultātā Mūsu speciālisti sastāda tehniskās apsekošanas atskaiti, norādot slodzes grafikus, īsslēguma strāvas aprēķinus, kontaktsavienojumu termogrammas un fotogrāfijas ar elektroinstalācijas neatbilstību.
+                            <br>
+                            Balstoties uz  speciāli izstrādātas metodikas, Elektroaudits neaizņem daudz laika un neietekmē objekta ierasto darba režīmu, jo Elektroauditam nav nepieciešama elektroenerģijas atslēgšana un daudzi audita procesi notiek paralēli.
+                          </p>
                       </div>
                       <!-- end of single item -->
 
                       <!-- single item -->
                       <div class="content" id="Nr.4">
-                        <h4>Pakalpojums Nr.4</h4>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint possimus alias, consequatur odio error temporibus ea porro omnis officia!
+                        <h3>Elektroenerģijas kvalitātes parametru mērīšana</h3>
+                        <p class="services__data">
+                          SIA “ME PROJEKTS” saviem juridiskiem klientiem piedāvā veikt  elektroenerģijas kvalitātes analīzi.
+                          <br>
+                          Elektroenerģija ir tāda pati prece, kā degviela, pārtika, ierīces vai sakari un pērkot to ir nepieciešams pārliecināties, ka elektroenerģija atbilst Latvijas Valsts noteikumiem, kuri nosaka elektroenerģijas kvalitātes parametrus. Mūsu sertificēti eksperti veic elektroenerģijas kvalitātes mērījumus, izmantojot strāvas analizatoru. Iegūta informācija tiek analizēta un tiek noteikta rezultātu atbilstība  Latvijas Valsts likumdošanas prasībām.
+                          <br>
+                          Pie tam pārbaudes aktu datus var lietderīgi izmantot, piemēram, patērētas elektroenerģijas rēķina samazināšanai. Balstoties uz mērījumu rezultātiem ir iespējams pieņemt lēmumu par reaktīvas jaudas kompensācijas nepieciešamību vai arī ievadautomāta nomināla samazināšanu, lai nepārmaksātu par neizmantotu   ievadaizsardzības aparāta (IAA) jaudu.
+
                         </p>
                       </div>
                       <!-- end of single item -->
 
                       <!-- single item -->
                       <div class="content" id="Nr.5">
-                        <h4>Pakalpojums Nr.5</h4>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minima rerum possimus labore fugiat, vero nam ullam quas vel magnam! Voluptatum rerum doloribus quibusdam repellendus quia dolore dolor ex odit molestiae, quas asperiores saepe facilis alias similique est minus delectus.
+                        <h3>Strāvas noplūdes aizsardzības pārbaude</h3>
+                        <p class="services__data">
+                          Papildus elektriskajiem mērījumiem atbilstoši MK Nr. 238 “Ugunsdrošības noteikumi”, SIA “ME PROJEKTS” speciālisti rekomendē veikt arī strāvas noplūdes aizsardzības pārbaudi. 
+                          <br>
+                          Strāvas noplūdes aizsardzība, jeb diferenciālas aizsardzības automāts (difautomāts) pasargā cilvēkus no strāvas tiešas iedarbības, cilvēkam pieskaroties strāvu vadošām daļām. Bez specializētas pārbaudes ar elektriskiem mērinstrumentiem nav iespējams noteikt vai strāvas noplūdes aizsardzība darbojas tā, kā tai ir paredzēts. Galvenā rekomendācija šajā gadījumā – periodiski veikt strāvas noplūdes aizsardzības pārbaudi, lai pārliecinātos, ka objektā ir ievēroti drošības noteikumi un visas sistēmas funkcionē atbilstoši.
                         </p>
+                      </div>
+                      <!-- end of single item -->
+                       <!-- single item -->
+                      <div class="content" id="Nr.6">
+                        <h3 class="light_title">Zibensaizsardzība</h3>
+                          <p class="services__data_6">
+                            Pēc LBN 261-15 “Ēku iekšējā elektroinstalācija” būvnormatīva, trešās grupas ēkām ir obligāti paredzēta zibensaizsardzība. Pārējos gadījumos zibensaizsardzības ierīkošanas nepieciešamību nosaka, ņemot vērā ēkas raksturlielumus un riska kritērijus, kas noteikti standartā LVS EN 62305-2:2012 “Zibensaizsardzība. 2. daļa: Riska pārvaldība (IEC 62305-2:2010, modificēts)”. Pārējiem objektiem zibensaizsardzības nepieciešamību nosaka tās īpašnieks vai pārvaldnieks.
+                            <br>
+                            Zibensaizsardzība nenodrošina 100% aizsardzību no zibens un to savukārt iedala klasēs. Pastāv 4 zibensaizsardzības klases, kur pirmā klase – zibensaizsardzības sistēmas ar visaugstāko aizsardzības pakāpi un ceturtā –  ar viszemāko.
+                            <br>
+                            Zemāk ir norādītas aizsardzības pakāpes katrai zibensaizsardzības klasei:
+                          </p>
+                          <ul class="services__data_np">
+                            <li>
+                              I   klase – 98 %;
+                            </li>
+                            <li>
+                              II  klase – 95 %;
+                            </li>
+                            <li>
+                              III klase – 90 %;
+                            </li>
+                            <li>
+                              IV klase – 80 %;
+                            </li>
+                          </ul>
+
+                          <b>Zibensaizsardzības sistēma iekļauj:</b>
+                          <ul class="services__data_6" >
+                            <li>
+                              Zibens uztvērējsistēma (jumta daļa) ar nolaidumiem no jumta uz zemējuma kontūru;
+                            </li>
+                            <li>
+                              Zemējuma kontūrs;
+                            </li>
+                            <li>
+                              Pārsprieguma aizsardzība (ierīces);
+                            </li>
+                          </ul>
+                          <p class="services__data_6">Pēc darbības principa zibensaizsardzības sistēmas iedala divās pamatgrupās:</p>
+                          <ul class="services__data_6">
+                            <li>
+                              <b>Aktīva zibensaizsardzība</b> – zibensaizsardzības sistēmā pielietota jonizācijas metode, lai palielinātu zibensaizsardzības zonu. Šis sistēmas izbūve ir visizdevīgākā un visvienkāršākā Tā arī neietekmē objekta ārējo izskatu.
+                            </li>
+                          </ul>
+                          <p class="services__data_6">
+                              Galvenais aktīvas zibensaizsardzības trūkums ir tas, ka sistēmas izmantošanu nereglamentē Latvijas Valsts likumdošana un Latvijas normatīvie akti. Ja objektam ir III kategorija vai arī zibensaizsardzības ierīkošanas nepieciešamību nosaka pēc LVS EN 62305-2:2012 “Zibensaizsardzība. 2. daļa: Riska pārvaldība” standarta, tad var rasties reālas grūtības objektu nodošana ekspluatācijā. Bet neskatoties uz to, Mūsu praksē ir reālie piemēri, kad III kategorijas objektiem ir uzstādīta aktīva zibensaizsardzība un objekts ir nodots ekspluatācijā.
+                            </p>
+                          <ul class="services__data_6">
+                            <li>
+                              <b>Pasīva zibensaizsardzība</b> – klasiskā zibensaizsardzības sistēma, kuras pamatā tiek pielietots tīklojums, troses vai aizsargstieņa metodes. Klasiskās zibensaizsardzības sistēmas projektēšanas un izbūves rekomendācijas detalizēti norādītās standartā EN 62305-3.
+                          </ul>
+                          <p class="services__data_6">
+                              Salīdzinājumā ar aktīvu zibensaizsardzību – pasīvas zibensaizsardzības ierīkošanas izmaksas ir lielākas un tā ietekmē ēkas ārējo izskatu.
+                              <br>
+                              Lai pasargātu objektu no zibens sekām ir nepieciešams uzlikt arī pārsprieguma aizsardzību. Vairākos gadījumos sadales ievadā uzstāda kombinētu I un II klases pārsprieguma aizsardzību. Detalizētākā informācija, kā pareizi izvēlēties pārsprieguma aizsardzību, atrodama standartā EN 62305-4.
+                            </p>
+                        
                       </div>
                       <!-- end of single item -->
                     </article>
@@ -150,14 +360,14 @@
               </section>
 
               <!--  -->
-        <section
+        <!-- <section
           data-index="3"
           class="section s4 projects"
           data-anchor="projects"
           id="projects__bubble"
         >
           <div class="container projects__container"></div>
-        </section>
+        </section> -->
         <!--  -->
 
         <!-- contact -->
@@ -172,18 +382,21 @@
           <div class="contact__content">
             <p class="contact__descriptino">
               <h3>SIA "ME PROJEKTS"</h3>
-              
+              <br>
+              <h3>Vienotais reģ.nr:</h3>
+              <h4>42103081525</h4>            
               <br>
               <h3>Adrese:</h3>
-              <h4>...............</h4>
+              <h4>Rencēnu iela 40-80, Rīga, LV-1073</h4>
               <br>
-              <h3>epasts:</h3>
+              <h3>Telefons:</h3>
+              <h4>+371 23205666</h4>
+              <br>
+              <h3>Epasts:</h3>
               <h4>info@meprojekts.lv</h4>
-              
               <br>
-              <h3>telefons:</h3>
-              <h4>+371 .......</h4>
-              
+              <h3>Banka:</h3>
+              <h4>Swedbank LV96HABA0551044354643</h4>
               <br>
           </div>
           
@@ -194,11 +407,9 @@
           
         </div>
       </section>
-          </div>
-        </section>
       </main>
     </div>
-
+    
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz11gQ2AS4nuSpFNQxltaodzi0mR5djNA&callback=initMap&libraries=&v=weekly"
       async
