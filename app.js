@@ -1,6 +1,6 @@
 //scrolls
 new fullpage("#fullpage", {
-  autoScrolling: true,
+  responsiveWidth: 795,
   continuousVertical: true,
 });
 
