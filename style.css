@@ -425,6 +425,9 @@ ul.services__data {
   .services-content {
     padding: 0;
   }
+  ul.services__data {
+    margin: 0rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
