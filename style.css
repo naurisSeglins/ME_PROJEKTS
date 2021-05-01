@@ -444,8 +444,11 @@ ul.services__data {
   gap: 1.5rem;
 }
 
+.contact__item {
+  margin: 0;
+}
 .contact__title,
-.contact__descriptino {
+.contact__description {
   color: #fff;
 }
 
