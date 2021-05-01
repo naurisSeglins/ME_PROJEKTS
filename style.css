@@ -472,6 +472,7 @@ ul.services__data {
 @media screen and (max-width: 870px) {
   .contact__container {
     grid-template-columns: repeat(1, auto);
+    width: 100vw;
   }
   #contact {
     height: auto;
