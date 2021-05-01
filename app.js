@@ -84,3 +84,38 @@ function initMap() {
     map: map,
   });
 }
+
+// SHOW MENU
+// izveidota funkcija "showMenu"
+// funkcijai ir divi parametri => "toggleId" un "navId"
+// abi šie parametri tiek meklēti html failā pēc id
+const showMenu = (toggleId, navId) => {
+  const toggle = document.getElementById(toggleId),
+    nav = document.getElementById(navId);
+  // ja abi šie elementi pēc id tiek atrasti, tad
+  // "toggle" elementam tiek pievienota klausīšanās funkcija uz "click"
+  //teorija - Toggles between a class name for an element.
+  // The first parameter removes the specified class from an element, and returns false.
+  // If the class does not exist, it is added to the element, and the return value is true.
+  // ja tiek izsaukta "toggle" elementa funkcija, tad "nav" elementam tiek pievienota klase "show"
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("show-menu");
+    });
+  }
+};
+//"showMenu" funkcija ar norādītām vērtībām
+showMenu("nav-toggle", "nav-menu");
+
+// REMOVE MENU MOBILE
+// elementi ar klasi "nav__link" zem viena parametra "navLink"
+const navLink = document.querySelectorAll(".nav__link");
+//funkcija "linkAction" kurā tiek sameklēts elements pēc ID "nav-menu"
+// un noņemta tam klase "show-menu"
+function linkAction() {
+  const navMenu = document.getElementById("nav-menu");
+  navMenu.classList.remove("show-menu");
+}
+//katrama navLink elementam tiek piešķirta funkcija "linkAction"
+//kura tiek izpildīta ja tiek uzklikšķināts uz šī elementa
+navLink.forEach((n) => n.addEventListener("click", linkAction));

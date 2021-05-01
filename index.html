@@ -13,8 +13,8 @@
     <title>ME PROJEKTS</title>
   </head>
   <body>
-    <header id="header">
-      <nav>
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
         <!-- <div class="logo"> -->
         <img
           class="logo"
@@ -24,31 +24,36 @@
         />
         <!-- </div> -->
 
-        <ul>
-          <li data-menuanchor="home">
-            <a data-page="home__bubble" href="#home">Sākums</a>
-          </li>
-          <li data-menuanchor="about">
-            <a data-page="about__bubble" href="#about">Par mums</a>
-          </li>
-          <li data-menuanchor="services">
-            <a data-page="services__bubble" href="#services">Pakalpojumi</a>
-          </li>
-          <!-- <li data-menuanchor="projects">
-            <a data-page="projects__bubble" href="#projects">Projekti</a>
-          </li> -->
-          <li data-menuanchor="contact">
-            <a data-page="contact__bubble" href="#contact">Kontakti</a>
-          </li>
-          <!-- <li >
-            <a  href="#"><img class="flag__img" id="uk_flag" src="./img/uk_flag.svg" alt="UK flag"> </a>
-          </li>
-          <li>
-            <a href="#"> <img class="flag__img" id="rus_flag" src="./img/rus_flag.svg" alt="RUS flag"></a>
-          </li> -->
-          <div class="bubble"></div>
-          <a href=""></a>
-        </ul>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li data-menuanchor="home" class="nav__item">
+                <a data-page="home__bubble" href="#home" class="nav__link">Sākums</a>
+              </li>
+              <li data-menuanchor="about" class="nav__item">
+                <a data-page="about__bubble" href="#about" class="nav__link">Par mums</a>
+              </li>
+              <li data-menuanchor="services" class="nav__item">
+                <a data-page="services__bubble" href="#services" class="nav__link">Pakalpojumi</a>
+              </li>
+              <!-- <li data-menuanchor="projects" class="nav__item">
+                <a data-page="projects__bubble" href="#projects" class="nav__link">Projekti</a>
+              </li> -->
+              <li data-menuanchor="contact" class="nav__item" id="contact_item">
+                <a data-page="contact__bubble" href="#contact" class="nav__link">Kontakti</a>
+              </li>
+              <!-- <li >
+                <a  href="#"><img class="flag__img" id="uk_flag" src="./img/uk_flag.svg" alt="UK flag"> </a>
+              </li>
+              <li>
+                <a href="#"> <img class="flag__img" id="rus_flag" src="./img/rus_flag.svg" alt="RUS flag"></a>
+              </li> -->
+              <div class="bubble"></div>
+              
+          </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
       </nav>
     </header>
     <footer class="footer" >
@@ -71,9 +76,7 @@
           data-anchor="home"
           id="home__bubble"
         >
-          <div class="container home__container">
-            <div class="title"><h1>ME PROJEKTS</h1></div>
-          </div>
+            <h1>ME PROJEKTS</h1>
         </section>
         <section
           data-index="1"
@@ -89,7 +92,7 @@
                     <br>
                     <br>
                     Mūsu sertificēti specialisti realizēja vairākus elektroapgādes un automatizācijas projektus visdažādākajās nozares un ekonomikas sektoros, piemēram:
-                    <ul>
+                    <ul class="about__list">
                       <li>
                         Lielveikalu tīkli;
                       </li>
@@ -299,7 +302,7 @@
                        <!-- single item -->
                       <div class="content" id="Nr.6">
                         <h3 class="light_title">Zibensaizsardzība</h3>
-                          <p class="services__data_6">
+                          <p class="services__data">
                             Pēc LBN 261-15 “Ēku iekšējā elektroinstalācija” būvnormatīva, trešās grupas ēkām ir obligāti paredzēta zibensaizsardzība. Pārējos gadījumos zibensaizsardzības ierīkošanas nepieciešamību nosaka, ņemot vērā ēkas raksturlielumus un riska kritērijus, kas noteikti standartā LVS EN 62305-2:2012 “Zibensaizsardzība. 2. daļa: Riska pārvaldība (IEC 62305-2:2010, modificēts)”. Pārējiem objektiem zibensaizsardzības nepieciešamību nosaka tās īpašnieks vai pārvaldnieks.
                             <br>
                             Zibensaizsardzība nenodrošina 100% aizsardzību no zibens un to savukārt iedala klasēs. Pastāv 4 zibensaizsardzības klases, kur pirmā klase – zibensaizsardzības sistēmas ar visaugstāko aizsardzības pakāpi un ceturtā –  ar viszemāko.
@@ -322,7 +325,7 @@
                           </ul>
 
                           <b>Zibensaizsardzības sistēma iekļauj:</b>
-                          <ul class="services__data_6" >
+                          <ul class="services__data" >
                             <li>
                               Zibens uztvērējsistēma (jumta daļa) ar nolaidumiem no jumta uz zemējuma kontūru;
                             </li>
@@ -333,20 +336,20 @@
                               Pārsprieguma aizsardzība (ierīces);
                             </li>
                           </ul>
-                          <p class="services__data_6">Pēc darbības principa zibensaizsardzības sistēmas iedala divās pamatgrupās:</p>
-                          <ul class="services__data_6">
+                          <p class="services__data">Pēc darbības principa zibensaizsardzības sistēmas iedala divās pamatgrupās:</p>
+                          <ul class="services__data">
                             <li>
                               <b>Aktīva zibensaizsardzība</b> – zibensaizsardzības sistēmā pielietota jonizācijas metode, lai palielinātu zibensaizsardzības zonu. Šis sistēmas izbūve ir visizdevīgākā un visvienkāršākā Tā arī neietekmē objekta ārējo izskatu.
                             </li>
                           </ul>
-                          <p class="services__data_6">
+                          <p class="services__data">
                               Galvenais aktīvas zibensaizsardzības trūkums ir tas, ka sistēmas izmantošanu nereglamentē Latvijas Valsts likumdošana un Latvijas normatīvie akti. Ja objektam ir III kategorija vai arī zibensaizsardzības ierīkošanas nepieciešamību nosaka pēc LVS EN 62305-2:2012 “Zibensaizsardzība. 2. daļa: Riska pārvaldība” standarta, tad var rasties reālas grūtības objektu nodošana ekspluatācijā. Bet neskatoties uz to, Mūsu praksē ir reālie piemēri, kad III kategorijas objektiem ir uzstādīta aktīva zibensaizsardzība un objekts ir nodots ekspluatācijā.
                             </p>
-                          <ul class="services__data_6">
+                          <ul class="services__data">
                             <li>
                               <b>Pasīva zibensaizsardzība</b> – klasiskā zibensaizsardzības sistēma, kuras pamatā tiek pielietots tīklojums, troses vai aizsargstieņa metodes. Klasiskās zibensaizsardzības sistēmas projektēšanas un izbūves rekomendācijas detalizēti norādītās standartā EN 62305-3.
                           </ul>
-                          <p class="services__data_6">
+                          <p class="services__data">
                               Salīdzinājumā ar aktīvu zibensaizsardzību – pasīvas zibensaizsardzības ierīkošanas izmaksas ir lielākas un tā ietekmē ēkas ārējo izskatu.
                               <br>
                               Lai pasargātu objektu no zibens sekām ir nepieciešams uzlikt arī pārsprieguma aizsardzību. Vairākos gadījumos sadales ievadā uzstāda kombinētu I un II klases pārsprieguma aizsardzību. Detalizētākā informācija, kā pareizi izvēlēties pārsprieguma aizsardzību, atrodama standartā EN 62305-4.
